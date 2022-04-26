@@ -14,8 +14,13 @@
             height: 25em;
         }
 
-        input#itemSearch {
+        div#inputHolder {
+            margin: auto;
             width: 8em;
+        }
+
+        input#itemSearch {
+            width: 95%;
         }
     </style>
 </head>
@@ -29,42 +34,42 @@
                     <table>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/ear1.png" />
+                                <input type="image" name="earring" src="/jewelery/ear1.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/ear2.png" />
+                                <input type="image" name="earring" src="/jewelery/ear2.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/necklance.png" />
+                                <input type="image" name="necklance" src="/jewelery/necklance.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/braclet1.png" />
+                                <input type="image" name="braclet" src="/jewelery/braclet1.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/braclet2.png" />
+                                <input type="image" name="braclet" src="/jewelery/braclet2.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/ring1.png" />
+                                <input type="image" name="ring" src="/jewelery/ring1.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/ring2.png" />
+                                <input type="image" name="ring" src="/jewelery/ring2.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/jewelery/pocket.png" />
+                                <input type="image" name="pocket" src="/jewelery/pocket.png" />
                             </td>
                         </tr>
                     </table>
@@ -73,37 +78,37 @@
                     <table>
                         <tr>
                             <td>
-                                <input type="image" src="/armour/head.png" />
+                                <input type="image" name="head" src="/armour/head.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/armour/shoulder.png" />
+                                <input type="image" name="shoulder" src="/armour/shoulder.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/armour/back.png" />
+                                <input type="image" name="back" src="/armour/back.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/armour/chest.png" />
+                                <input type="image" name="chest" src="/armour/chest.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/armour/gloves.png" />
+                                <input type="image" name="gloves" src="/armour/gloves.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/armour/legs.png" />
+                                <input type="image" name="legs" src="/armour/legs.png" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="image" src="/armour/feet.png" />
+                                <input type="image" name="feet" src="/armour/feet.png" />
                             </td>
                         </tr>
                     </table>
@@ -113,19 +118,19 @@
                 <table>
                     <tr>
                         <td>
-                            <input type="image" src="/weapon/primaryWeapon.png" />
+                            <input type="image" name="weapon" src="/weapon/primaryWeapon.png" />
                         </td>
                         <td>
-                            <input type="image" src="/weapon/secondaryWeapon.png" />
+                            <input type="image" name="weapon" src="/weapon/secondaryWeapon.png" />
                         </td>
                     </tr>
         
                     <tr>
                         <td>
-                            <input type="image" src="/weapon/rangedWeapon.png" />
+                            <input type="image" name="rangedWeapon" src="/weapon/rangedWeapon.png" />
                         </td>
                         <td>
-                            <input type="image" src="/weapon/class.png" />
+                            <input type="image" name="weapon" src="/weapon/class.png" />
                         </td>
                     </tr>
                 </table>
@@ -135,7 +140,9 @@
     </div>
 
     <div id="itemSearchPopup">
-        <input id="itemSearch" type="text"></input>
+        <div id="inputHolder">
+            <input id="itemSearch" type="text"></input>
+        </div>
     </div>
     
     <script src="/resources/page.js">
